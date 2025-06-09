@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  min-width: 520px;
+}
+
+.navbar-wrapper {
+  display: grid;
+  grid-template-columns: 2em 3em 8em 7em auto;
+  grid-template-rows: 20px;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 2em;
+  background-color: rgb(42, 161, 239);
+  box-shadow: 0px 4px 11px 0px #1a4174;
+}
+.navbar-wrapper .logo {
+  display: inline;
+  font-size: 2em;
+  color: white;
+}
+.navbar-wrapper .nav-item {
+  text-decoration: none;
+  display: inline;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+.navbar-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.navbar-wrapper a:hover {
+  padding: 0.2em;
+  color: rgb(42, 161, 239);
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-wrapper img {
+  width: 100%;
+  z-index: -1;
+}
+.hero-wrapper h1 {
+  position: absolute;
+  top: 10emx;
+  align-self: center;
+  color: rgb(33, 61, 139);
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin: 5em;
+  padding: 1em 2em;
+  background-color: rgba(244, 141, 113, 0.2);
+  text-align: center;
+}
+
+.general-info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1em;
+  margin: 5em;
+  background-color: rgba(244, 141, 113, 0.2);
+}
+.general-info-section p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 25px;
+}
+.general-info-section img {
+  align-self: center;
+  margin-left: 2em;
+  width: 25%;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0;
+  background-image: url("../../assets/self-improvement_truworth-wellness.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 5em;
+  min-height: 300px;
+}
+.list-wrapper .list-title {
+  font-size: 2em;
+  margin-right: 1em;
+}
+.list-wrapper ul {
+  font-size: 1.5em;
+  width: 10em;
+  margin-left: 0;
+}
+
+.methods-section {
+  margin: 5em;
+}
+.methods-section h2 {
+  font-size: 2em;
+}
+.methods-section p {
+  font-size: 25px;
+}
+
+.table-wrapper {
+  margin: 5em;
+}
+.table-wrapper table {
+  border-collapse: collapse;
+  border: 2px solid rgb(42, 161, 239);
+  width: 100%;
+}
+.table-wrapper th,
+.table-wrapper td {
+  border: 2px solid rgb(42, 161, 239);
+  padding: 1em;
+  text-align: left;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 2em;
+  background-color: rgb(42, 161, 239);
+  box-shadow: 0px 4px 11px 0px #1a4174;
+}
+.footer-wrapper a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  text-align: center;
+}
+.footer-wrapper a:hover {
+  padding: 0.2em;
+  color: rgb(42, 161, 239);
+  background-color: yellow;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar-wrapper {
+    grid-template-columns: 2em 3em 4em 4em auto;
+    padding: 1em;
+    gap: 1em;
+  }
+  .navbar-wrapper .logo {
+    font-size: 1.5em;
+  }
+  .navbar-wrapper .nav-item {
+    font-size: 1em;
+  }
+  .navbar-wrapper a {
+    font-size: 1em;
+  }
+  .hero-wrapper {
+    margin-bottom: 1em;
+  }
+  .hero-wrapper h1 {
+    font-size: 1.5em;
+    top: 3%;
+    padding: 0.2em;
+    min-width: 550px;
+  }
+  .general-info-section {
+    flex-direction: column;
+    margin: 2em;
+    font-size: 1.5em;
+  }
+  .general-info-section img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .general-info-section p {
+    font-size: 1em;
+  }
+  .list-wrapper {
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+  }
+  .list-wrapper .list-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+    background-color: rgba(26, 65, 116, 0.5);
+    padding: 1em;
+  }
+  .list-wrapper ul {
+    font-size: 1.4em;
+    width: auto;
+    color: white;
+    background-color: rgba(26, 65, 116, 0.5);
+    padding: 1em;
+  }
+  .methods-section {
+    margin: 2em;
+  }
+  .methods-section h2 {
+    font-size: 1.5em;
+  }
+  .methods-section p {
+    font-size: 1em;
+  }
+  .table-wrapper {
+    margin: 1em;
+  }
+  .table-wrapper td,
+  .table-wrapper th {
+    font-size: 1em;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+}/*# sourceMappingURL=index.css.map */
